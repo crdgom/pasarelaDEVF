@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,11 @@
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.18.2",
-    "luhn": "^2.4.1"
+    "luhn": "^2.4.1",
+    "pg": "^8.10.0",
+    "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }

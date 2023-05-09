@@ -1,5 +1,5 @@
 import express from 'express';
-//import rutasPieza from './routes/piezas.routes.js';
+import rutasCard from './routes/card.routes.js';
 //import { sequelize } from './database/database.js';
 
 function main(){
@@ -11,10 +11,10 @@ function main(){
     }catch(error){
         console.log("Conexion fallida, error -> "+error);
     }*/
-    const app = express(); // Inicializa el servidor
-    app.use(express.json()); // Se va a comunicar atraves de JSON
-    app.use(express.urlencoded({extended:false})); // Permite o no parametros
-    //app.use(rutasPieza); // Se va a comunicacion
+    const app = express();
+    app.use(express.json()); 
+    app.use(express.urlencoded({extended:false})); 
+    app.use(rutasCard); 
     app.listen(3000);
     console.log("El servidor esta escuchando en el puerto 3000");
 }
