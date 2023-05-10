@@ -16,7 +16,15 @@ async function main(){
     app.use(express.urlencoded({extended:false})); 
     app.use(rutasCard); 
     app.listen(3000);
-    console.log("El servidor esta escuchando en el puerto 3000");
+    console.log(`
+        El servidor esta escuchando en el puerto 3000
+        
+        http://localhost:3000/
+        
+        ctrl + click en el link para abrir en el navegador
+        
+        Presione ctrl + c para detener el servidor
+        `);
 }
 
 main();

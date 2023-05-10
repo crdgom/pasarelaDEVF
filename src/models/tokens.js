@@ -18,6 +18,10 @@ export default class tokens extends Model {
       type: DataTypes.DATEONLY,
       allowNull: false
     },
+    creado: {
+      type: DataTypes.DATEONLY,
+      allowNull: false
+    },
     card_id: {
       type: DataTypes.UUID,
       allowNull: false,
@@ -30,7 +34,7 @@ export default class tokens extends Model {
     sequelize,
     tableName: 'tokens',
     schema: 'public',
-    timestamps: true,
+    timestamps: false,
     indexes: [
       {
         name: "tokens_pkey",
